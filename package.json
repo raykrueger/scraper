@@ -4,6 +4,7 @@
   "description": "Scraper sample for DigitalOcean",
   "main": "scrape.js",
   "dependencies": {
+    "request" : "2.34.0",
     "cheerio" : "0.15.0"
   },
   "devDependencies": {
