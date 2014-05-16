@@ -3,15 +3,18 @@
   "version": "0.0.0",
   "description": "Scraper sample for DigitalOcean",
   "main": "scrape.js",
-  "scripts": {
-    "test": "mocha -R spec test"
-  },
   "dependencies": {
     "cheerio" : "0.15.0"
   },
   "devDependencies": {
+    "coffee-script" : "1.7.1",
     "mocha" : "1.18.2"
   },
   "author": { "name" : "Ray Krueger", "email" : "raykrueger@gmail.com" },
-  "license": "ISC"
+  "license": "ISC",
+  "scripts": {
+    "pretest" : "npm run compile",
+    "compile" : "coffee -o lib -c src/*.coffee",
+    "test": "mocha -R spec test"
+  }
 }
