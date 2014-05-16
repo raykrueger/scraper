@@ -15,6 +15,6 @@
   "scripts": {
     "pretest" : "npm run compile",
     "compile" : "coffee -o lib -c src/*.coffee",
-    "test": "mocha -R spec test"
+    "test": "mocha --reporter spec --compilers coffee:coffee-script/register"
   }
 }
