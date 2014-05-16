@@ -1,0 +1,6 @@
+A scraper written in nodejs.
+
+The source and tests are written in coffeescript. Npm is configured to compile
+the src into lib before publishing or running tests.
+
+Use "npm test" to  run the mocha tests.
