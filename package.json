@@ -1,0 +1,14 @@
+{
+  "name": "scraper",
+  "version": "0.0.0",
+  "description": "Scraper sample for DigitalOcean",
+  "main": "scrape.js",
+  "scripts": {
+    "test": "test"
+  },
+  "dependencies": {
+    "mocha" : "1.18.2"
+  },
+  "author": { "name" : "Ray Krueger", "email" : "raykrueger@gmail.com" },
+  "license": "ISC"
+}
