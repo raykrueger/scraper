@@ -4,9 +4,12 @@
   "description": "Scraper sample for DigitalOcean",
   "main": "scrape.js",
   "scripts": {
-    "test": "test"
+    "test": "mocha -R spec test"
   },
   "dependencies": {
+    "cheerio" : "0.15.0"
+  },
+  "devDependencies": {
     "mocha" : "1.18.2"
   },
   "author": { "name" : "Ray Krueger", "email" : "raykrueger@gmail.com" },
