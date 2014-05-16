@@ -24,7 +24,7 @@ describe "link-evaluator", ->
     before -> @baseUrl = "http://www.example.com"
 
     it "should follow same host", ->
-      followed = linkEval.shouldFollow(@baseUrl, "http://www.example.com")
+      followed = linkEval.shouldFollow(@baseUrl, "http://www.example.com/test")
       assert followed
 
     it "should not follow subdomain", ->
@@ -33,4 +33,8 @@ describe "link-evaluator", ->
 
     it "should not follow different domain", ->
       followed = linkEval.shouldFollow(@baseUrl, "http://facebook.com")
+      assert !followed
+
+    it "should not follow to baseurl", ->
+      followed = linkEval.shouldFollow(@baseUrl, @baseUrl)
       assert !followed

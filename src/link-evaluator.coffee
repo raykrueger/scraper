@@ -39,6 +39,6 @@ Returns true if the scraper should follow the link.
 shouldFollow = (baseUrl, href) ->
   baseUri = url.parse(baseUrl)
   uri = url.parse(href)
-  baseUri.host == uri.host
+  baseUri.href != uri.href && baseUri.host == uri.host
 
 module.exports = {shouldFollow: shouldFollow, resolve: resolve}
