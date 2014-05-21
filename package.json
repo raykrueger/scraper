@@ -11,7 +11,7 @@
     "coffee-script" : "1.7.1",
     "mocha" : "1.18.2"
   },
-  "author": { "name" : "Ray Krueger", "email" : "raykrueger@gmail.com" },
+  "author": "Ray Krueger <raykrueger@gmail.com>",
   "license": "ISC",
   "scripts": {
     "pretest" : "npm run compile",
