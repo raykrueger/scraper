@@ -4,12 +4,14 @@
   "description": "Scraper sample for DigitalOcean",
   "main": "scrape.js",
   "dependencies": {
-    "request" : "2.34.0",
-    "cheerio" : "0.15.0"
+    "cheerio" : "0.16.0",
+    "lodash"  : "2.4.1",
+    "request" : "2.36.0"
   },
   "devDependencies": {
     "coffee-script" : "1.7.1",
-    "mocha" : "1.18.2"
+    "mocha" : "1.19.0",
+    "nock"  : "0.31.2"
   },
   "author": "Ray Krueger <raykrueger@gmail.com>",
   "license": "ISC",
